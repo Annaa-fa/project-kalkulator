@@ -1,0 +1,94 @@
+<!--
+Faathimah Annaafi'ah
+250202011
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header class="navbar">
+        <h1 class="logo">Kalkulator Sederhana</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#kalkulator">Kalkulator</a>
+                </li>
+
+                <li>
+                    <a href="#panduan">Panduan</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utaman -->
+    <main>
+        <!-- Section Kalkulator -->
+        <section id="kalkulator" class="kalkulator">
+            <h2 id="judul">Hitung Dua Angka</h2>
+
+            <p id="petunjuk">Masukkan dua angka, lalu pilih operasi.</p>
+            <!--Kartu Kalkulator-->
+            <article class="kartu">
+                <!--input angka pertama-->
+                <label for="angka-a">Angka pertama</label>
+                <input type="number" id="angka-a" placeholder="contoh: 8">
+
+                <!--input angka kedua-->
+                <label for="angka-b">Angka kedua</label>
+                <input type="number" id="angka-b" placeholder="contoh: 2">
+
+                <!--tombol operasi-->
+                <div class="tombol-grid">
+                    <button id="tombol-tambah" type="button">+</button>
+                    <button id="tombol-kurang" type="button">-</button>
+                    <button id="tombol-kali" type="button">x</button>
+                    <button id="tombol-bagi" type="button">:</button>
+                </div>
+
+                <!--tombol hapus-->
+                <button id="tombol-hapus" class="hapus" type="button">Hapus</button>
+                <!--hasil perhitungan-->
+                <p id="hasil" class="hasil">Hasil: 0</p>
+                <!--statistik-->
+                <p id="statistik">Jumlah Perhitungan: 0</p>
+                <!--Sifat hasil-->
+                <p id="sifat-hasil">Sifat hasil: -</p>
+                <!--tombol panduan-->
+                <button id="tombol-panduan" type="button">Tampilkan panduan</button>
+            </article>
+        </section>
+
+        <!--section panduan-->
+        <section id="panduan" style="display: none">
+            <h2>Panduan Penggunaan</h2>
+            <ol>
+                <li>Masukkan Angka pertama</li>
+                <li>Masukkan Angka kedua</li>
+                <li>Pilih salah satu operasi: tambah, kurang, kali, atau bagi</li>
+                <li>Hasil perhitungan akan ditampilkan pada bagian hasil</li>
+                <li>
+                    statistik jumlah perhitungan akan bertambah setiap kali perhitungan berhasil.
+                </li>
+                <li>
+                    Gunaka tombol untuk menampilkan panduan untuk melihat atau menyembunyikan panduan.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!--foooter-->
+    <footer>
+        <p id="info-pembuat">&copy; 2026 Praktikum Pemrograman Web Dasar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
